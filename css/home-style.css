@@ -1,4 +1,27 @@
-
+/*phần anh sửa dropdown list (product) ở đây nhé*/
+a.dropdown-title {
+    position: relative;
+}
+a.dropdown-title:before {
+    content: "";
+    position: absolute;
+    bottom:0;
+    right: 0;
+    left: auto;
+    width: 0;
+    height: 0;
+    border-bottom: 1px solid #eee;
+    transition: 0.5s;
+    overflow: hidden;
+}
+a.dropdown-title:hover:before {
+    width: 100%;
+    left: 0;
+    right: auto;
+    border-bottom: 1px solid lightblue;
+    overflow: hidden;
+}
+/*kết thúc sửa*/
 body{
     color: #404040;
     font-weight: 400;
